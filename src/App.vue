@@ -122,7 +122,7 @@
             class="w-full"
           />
         </div>
-        <div class="cursor-pointer transition hover:-translate-y-2 w-14 justify-self-center self py-px">
+        <div class="cursor-pointer transition hover:-translate-y-2 w-12 justify-self-center self py-px">
           <img
             src="https://www.svgrepo.com/show/354202/postman-icon.svg"
             alt="postman"
