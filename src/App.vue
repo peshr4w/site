@@ -16,7 +16,7 @@
           <img
             src="https://www.svgrepo.com/show/452228/html-5.svg"
             alt="html"
-            class="w-16"
+            class="w-16 p-5"
           />
         </div>
         <div class="cursor-pointer transition hover:-translate-y-2">
@@ -165,6 +165,13 @@
         </div>
 
         <div class="cursor-pointer transition hover:-translate-y-2">
+          <img
+            src="https://www.svgrepo.com/show/303301/postgresql-logo.svg"
+            alt="postgresql"
+            class="w-14 md:w-16"
+          />
+        </div>
+         <div class="cursor-pointer transition hover:-translate-y-2">
           <img
             src="https://www.svgrepo.com/show/353735/firebase.svg"
             alt="firebase"
