@@ -10,76 +10,76 @@
       </h1>
       <div
         data-aos="fade-up"
-        class="frontend flex space-x-3 px-3 transition items-center justify-center p-4 rounded-full backdrop-blur-md bg-white/80 relative"
+        class="frontend flex flex-wrap flex-rows space-x-3 px-3 transition items-center justify-center p-4 rounded-full backdrop-blur-md bg-white/80 relative"
       >
-        <div class="cursor-pointer transition hover:-translate-y-2">
+        <div class="cursor-pointer transition hover:-translate-y-2 basis-1/5">
           <img
-            src="https://www.svgrepo.com/show/452228/html-5.svg"
+            src="https://www.svgrepo.com/show/349402/html5.svg"
             alt="html"
-            class="w-16 p-5"
+            class="w-full"
           />
         </div>
-        <div class="cursor-pointer transition hover:-translate-y-2">
+        <div class="cursor-pointer transition hover:-translate-y-2 basis-1/5">
           <img
             src="https://www.svgrepo.com/show/452185/css-3.svg"
             alt="css"
-            class="w-16"
+            class="w-full"
           />
         </div>
-        <div class="cursor-pointer transition hover:-translate-y-2">
+        <div class="cursor-pointer transition hover:-translate-y-2 basis-1/5">
           <img
             src="https://www.svgrepo.com/show/373705/js-official.svg"
             alt="js"
-            class="w-16"
+            class="w-full"
           />
         </div>
-        <div class="cursor-pointer transition hover:-translate-y-2">
+        <div class="cursor-pointer transition hover:-translate-y-2 basis-1/5">
           <img
             src="https://www.svgrepo.com/show/354478/typescript-icon.svg"
             alt="ts"
-            class="w-14"
+            class="w-full"
           />
         </div>
-        <div class="cursor-pointer transition hover:-translate-y-2">
+        <div class="cursor-pointer transition hover:-translate-y-2 basis-1/5">
           <img
             src="https://cdn.iconscout.com/icon/free/png-512/free-jquery-10-1175155.png?f=avif&w=256"
             alt="jquery"
-            class="w-16"
+            class="w-full"
           />
         </div>
-        <div class="cursor-pointer transition hover:-translate-y-2">
+        <div class="cursor-pointer transition hover:-translate-y-2 basis-1/5">
           <img
             src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png"
             alt="bootstrap"
-            class="w-16"
+            class="w-full"
           />
         </div>
-        <div class="cursor-pointer transition hover:-translate-y-2">
+        <div class="cursor-pointer transition hover:-translate-y-2 basis-1/5">
           <img
             src="https://www.svgrepo.com/show/374118/tailwind.svg"
             alt="tailwind"
-            class="w-16"
+            class="w-full"
           />
         </div>
-        <div class="cursor-pointer transition hover:-translate-y-2">
+        <div class="cursor-pointer transition hover:-translate-y-2 basis-1/5">
           <img
             src="https://www.svgrepo.com/show/452130/vue.svg"
             alt="vue"
-            class="w-16"
+            class="w-full"
           />
         </div>
-        <div class="cursor-pointer transition hover:-translate-y-2">
+        <div class="cursor-pointer transition hover:-translate-y-2 basis-1/5">
           <img
             src="https://www.svgrepo.com/show/354131/nuxt-icon.svg"
             alt="nuxt"
-            class="w-16"
+            class="w-full"
           />
         </div>
-        <div class="cursor-pointer transition hover:-translate-y-2">
+        <div class="cursor-pointer transition hover:-translate-y-2 basis-1/5">
           <img
             src="https://www.svgrepo.com/show/452092/react.svg"
             alt="react"
-            class="w-16"
+            class="w-full"
           />
         </div>
       </div>
