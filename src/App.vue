@@ -1,5 +1,19 @@
 <template>
-  <div class="p-4 text-4xl">Break the limits</div>
+ 
+ <header class="flex justify-between px-4 sticky top-0 py-3 backdrop-blur-md bg-white/40 z-10 ">
+    <div class="logo">logo</div>
+  </header>
+   <div class="container w-full flex flex-col items-center justify-center h-60 relative">
+    
+    <div class="div">
+        <h1 class="text-4xl font-bold text-transparent bg-gradient-to-r  to-purple-600 via-pink-400 from-violet-500 bg-clip-text mb-2">Hi. I'm Peshraw.</h1>
+        <ul class="capitalize font-mono experience">
+          <li class="font-mono transition opacity-0">Full-stack developer</li>
+          <li class="font-mono transition opacity-0">UI designer</li>
+           <li class="font-mono transition opacity-0">Mobile application developer</li>
+        </ul>
+        </div>
+   </div>
   <div class="p-4">
     <div class="experience flex justify-center flex-col items-center space-y-3">
       <h1
@@ -12,7 +26,7 @@
         data-aos="fade-up"
         class="frontend flex flex-wrap  flex-rows space-x-4 px-3 transition items-center justify-items-center  justify-center p-4 rounded-full backdrop-blur-md bg-white/80 relative mb-5"
       >
-        <div class="cursor-pointer transition hover:-translate-y-2 w-12">
+        <div class="cursor-pointer transition hover:-translate-y-2 w-12 justify-self-center">
           <img
             src="https://www.svgrepo.com/show/349402/html5.svg"
             alt="html"
@@ -30,14 +44,14 @@
           <img
             src="https://www.svgrepo.com/show/373705/js-official.svg"
             alt="js"
-            class="w-full"
+            class="w-full "
           />
         </div>
         <div class="cursor-pointer transition hover:-translate-y-2 w-12">
           <img
             src="https://www.svgrepo.com/show/354478/typescript-icon.svg"
             alt="ts"
-            class="w-full"
+            class="w-full "
           />
         </div>
         <div class="cursor-pointer transition hover:-translate-y-2 w-14 justify-self-center self py-px">
@@ -204,5 +218,29 @@ export default {
   setup() {
     AOS.init();
   },
+  methods:{
+    animate(){
+      let texts = document.querySelectorAll(".experience li")
+      let i = 0;
+     const animate =  setInterval(()=>{
+      console.log(i)
+         if(i>= texts.length){
+          clearInterval(animate)
+          i=0
+         }
+         texts[i].classList.remove('opacity-0')
+         texts[i].classList.add('opacity-1', '-translate-y-1')
+         
+         i++
+
+      }, 1000)
+    }
+  },
+  mounted(){
+    this.animate()
+  }
 };
 </script>
+<style>
+
+</style>
