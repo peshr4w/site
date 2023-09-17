@@ -18,7 +18,7 @@
     <div class="experience flex justify-center flex-col items-center space-y-3">
       <h1
         data-aos="fade-up"
-        class="text-2xl md:text-4xl bg-clip-text text-bold bg-gradient-to-r from-pink-500 via-violet-600 to-blue-500 text-transparent"
+        class="text-2xl md:text-4xl bg-clip-text font-bold bg-gradient-to-r from-pink-500 via-violet-600 to-blue-500 text-transparent"
       >
         Frontend
       </h1>
@@ -106,7 +106,7 @@
       </div>
       <h1
         data-aos="fade-up"
-        class="text-2xl text-bold md:text-4xl bg-clip-text bg-gradient-to-r from-lime-500 via-blue-600 to-yellow-500 text-transparent pt-4"
+        class="text-2xl font-bold md:text-4xl bg-clip-text bg-gradient-to-r from-lime-500 via-blue-600 to-yellow-500 text-transparent pt-4"
       >
         Backend
       </h1>
@@ -169,7 +169,7 @@
       </div>
       <h1
         data-aos="fade-up"
-        class="text-2xl text-bold md:text-4xl bg-clip-text bg-gradient-to-r from-violet-500 via-pink-600 to-yellow-500 text-transparent pt-4"
+        class="text-2xl font-bold md:text-4xl bg-clip-text bg-gradient-to-r from-violet-500 via-pink-600 to-yellow-500 text-transparent pt-4"
       >
         Database
       </h1>
