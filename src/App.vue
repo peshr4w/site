@@ -106,7 +106,7 @@
       </div>
       <h1
         data-aos="fade-up"
-        class="text-2xl font-bold md:text-4xl bg-clip-text bg-gradient-to-r from-lime-500 via-blue-600 to-yellow-500 text-transparent pt-4"
+        class="text-2xl font-bold md:text-4xl bg-clip-text bg-gradient-to-r from-lime-500 via-blue-600 to-pink-500 text-transparent pt-4"
       >
         Backend
       </h1>
