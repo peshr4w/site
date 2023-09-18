@@ -11,8 +11,9 @@
    <div class="container w-full flex flex-col items-center justify-center h-60 relative">
     
     <div class="div">
-        <h1 class="text-4xl font-bold text-transparent bg-gradient-to-r  to-purple-600 via-pink-400 from-violet-500 bg-clip-text mb-2">Hi. I'm Peshraw.</h1>
-        <ul class="capitalize font-mono experience">
+        <h1 class="text-4xl font-bold text-transparent bg-gradient-to-r  to-purple-600 via-pink-400 from-violet-500 bg-clip-text mb-2" id="header">Hi. I'm Peshraw.</h1>
+        <ul class="capitalize font-mono experience relative">
+          <div id="dot" class="opacity-0 mix-blend-darken ease-in-out transition absolute w-3 h-3 rounded-full  bg-gradient-to-tr via-pink-400 from-violet-500 -left-5 top-0"></div>
           <li class="font-mono transition opacity-0">Full-stack developer</li>
           <li class="font-mono transition opacity-0">UI designer</li>
            <li class="font-mono transition opacity-0">Mobile application developer</li>
@@ -200,14 +201,6 @@
             class="w-full"
           />
         </div>
-
-        <div class="cursor-pointer transition hover:-translate-y-2 w-14 justify-self-center self py-px">
-          <img
-            src="https://www.svgrepo.com/show/303301/postgresql-logo.svg"
-            alt="postgresql"
-            class="w-full"
-          />
-        </div>
          <div class="cursor-pointer transition hover:-translate-y-2">
           <img
             src="https://www.svgrepo.com/show/353735/firebase.svg"
@@ -287,19 +280,26 @@ const firebaseConfig = {
   methods:{
     animate(){
       let texts = document.querySelectorAll(".experience li")
+      let dot = document.getElementById('dot')
       let i = 0;
      const animate =  setInterval(()=>{
+      dot.style.opacity = 1
          if(i>= texts.length){
           clearInterval(animate)
           i=0
+          dot.style.transform = "scale(10)"
          }
          texts[i].classList.remove('opacity-0')
          texts[i].classList.add('opacity-1', '-translate-y-1')
-         
+         if(i >= 1){
+          dot.style.transform += "translateY(1.6rem)"
+         }
+        
          i++
 
       }, 1000)
     },
+    
   },
   mounted(){
     this.animate()
@@ -334,4 +334,5 @@ const firebaseConfig = {
   background: rgb(255, 93, 155);
   color: #fff;
 }
+
 </style>
