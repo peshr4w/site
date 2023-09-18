@@ -272,12 +272,12 @@
   <Teleport to="body">
     <Transition>
       <div
-        class="feedback w-full h-screen bg-slate-100 fixed top-0 p-4  overscroll-none"
+        class="feedback w-full h-screen bg-slate-100 fixed top-0 p-4 overflow-y-auto"
         v-if="show"
         
       >
         
-          <form @submit.prevent="sendMessage" class="relative mb-3 mt-14">
+          <form @submit.prevent="sendMessage" class="relative mb-5 mt-14">
             <img
               src="https://www.svgrepo.com/show/509207/quote.svg"
               class="w-10 absolute -right-2 -top-4"
@@ -293,7 +293,7 @@
               v-model="message"
             ></textarea>
             <button
-              class="p-2 transition bg-slate-200 rounded-full flex ms-auto"
+              class="p-2 transition bg-slate-200 rounded-full flex ms-auto outline-none"
               :class="{ active: active }"
               
             >
@@ -320,9 +320,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import {ref} from "vue";
-import { serverTimestamp } from "firebase/firestore";
 import { useCommentsStore } from "@/stores/firebase";
-import { storeToRefs } from "pinia";
 import { format } from 'timeago.js';
 
 export default {
@@ -336,8 +334,10 @@ export default {
     
     const sendMessage = () => {
       if (message.value.length > 0) {
-        commentsStore.addComment(message.value, serverTimestamp)
+        commentsStore.addComment(message.value)
+        message.value = ''
       }
+
     };
     return { show, message, sendMessage, commentsStore, format };
   },
@@ -349,7 +349,6 @@ export default {
   },
   watch: {
     message(val) {
-      console.log(val);
       if (val.length > 0) {
         this.active = true;
       } else {
@@ -409,8 +408,8 @@ export default {
   transform: translateY(10px);
   opacity: 0;
 }
-.active {
-  background: rgb(17, 168, 255);
-  color: #fff;
+.active{
+  color: blue;
 }
+
 </style>

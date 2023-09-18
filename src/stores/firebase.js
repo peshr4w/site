@@ -29,23 +29,23 @@ export const useCommentsStore = defineStore("comments", {
             const colref = collection(db, "comments");
             const q = query(colref, orderBy("createdAt"));
 
-            let commentsList = []
 
             onSnapshot(q, (snapshot) => {
+                this.comments = []
                 snapshot.docs.forEach((doc) => {
-                    commentsList.push({...doc.data(), id: doc.id })
+                    this.comments.push({...doc.data(), id: doc.id })
                 });
             })
-            this.comments = commentsList
+
         },
-        addComment(body, times) {
-            console.log(body)
-            initializeApp(this.firebaseConfig)
+        addComment(text) {
+            console.log(text)
+
             const db = getFirestore();
             const colref = collection(db, "comments");
             addDoc(colref, {
-                body: body,
-                createdAt: times
+                body: text,
+                createdAt: new Date()
             })
         }
     }
