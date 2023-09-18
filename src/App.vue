@@ -1,7 +1,12 @@
 <template>
  
- <header class="flex justify-between px-4 sticky top-0 py-3 backdrop-blur-md bg-white/40 z-10 ">
-    <div class="logo">logo</div>
+ <header class="flex justify-between items-center px-4 sticky top-0 py-2 backdrop-blur-md bg-white/40 z-10 ">
+    <a href="/" class="text-4xl font-bold text-transparent bg-gradient-to-br  to-purple-600 via-pink-400 from-violet-500 bg-clip-text">P.</a>
+    <button class="grid grid-cols-3 w-6 h-6 button active:animate-spin" @click="show = !show">
+      <div class="w-2 h-2  bg-red-100 col-start-2 col-end-4 rounded-full bg-gradient-to-tr   via-pink-400 from-violet-500"></div>
+      <div class="w-2 h-2  bg-red-100 rounded-full bg-gradient-to-tr   via-pink-400 from-violet-500"></div>
+      <div class="w-2 h-2  bg-red-100 col-start-3 rounded-full bg-gradient-to-tr   via-pink-400 from-violet-500"></div>
+    </button>
   </header>
    <div class="container w-full flex flex-col items-center justify-center h-60 relative">
     
@@ -13,6 +18,9 @@
            <li class="font-mono transition opacity-0">Mobile application developer</li>
         </ul>
         </div>
+   </div>
+   <div class="p-3 mb-3 flex flex-col justify-center relative">
+     <button class="border-slate-200 rounded-full px-3 py-2 border text-sm z-9 text-slate-700 mx-auto bg-white hover:bg-slate-100 transition capitalize">What I'm good at</button>
    </div>
   <div class="p-4">
     <div class="experience flex justify-center flex-col items-center space-y-3">
@@ -26,7 +34,7 @@
         data-aos="fade-up"
         class="frontend flex flex-wrap  flex-rows space-x-4 px-3 transition items-center justify-items-center  justify-center p-4 rounded-full backdrop-blur-md bg-white/80 relative mb-5"
       >
-        <div class="cursor-pointer transition hover:-translate-y-2 w-12 justify-self-center">
+        <div class="cursor-pointer transition hover:-translate-y-2  w-8 md:w-12 justify-self-center">
           <img
             src="https://www.svgrepo.com/show/349402/html5.svg"
             alt="html"
@@ -47,7 +55,7 @@
             class="w-full "
           />
         </div>
-        <div class="cursor-pointer transition hover:-translate-y-2 w-12">
+        <div class="cursor-pointer transition hover:-translate-y-2 w-8 md:w-12">
           <img
             src="https://www.svgrepo.com/show/354478/typescript-icon.svg"
             alt="ts"
@@ -210,20 +218,77 @@
       </div>
     </div>
   </div>
+  <div class="h-56"></div>
+  <Teleport to="body">
+    <Transition>
+    <div class="feedback w-full h-screen bg-slate-100 fixed top-14 p-4" v-if="show">
+      <header>
+        <form @submit.prevent="sendMessage" class="relative">
+          <img src="https://www.svgrepo.com/show/509207/quote.svg" class="w-10 absolute -right-2 -top-4" alt="quote">
+          <textarea name="comment" id="" rows="6" class="resize-none outline-none w-full rounded-lg p-3" spellcheck="off" placeholder="Send an anonymous message.." v-model="message"></textarea>
+          <button class="p-2 transition bg-slate-200 rounded-full flex float-right" :class="{active: active}" :disabled="!active"> 
+            Send
+            <img src="https://www.svgrepo.com/show/533314/send-alt-2.svg"  alt="send" class="w-6 -rotate-45 ml-1 transition  cursor-pointer">
+          </button>
+        </form>
+      </header>
+      <main class="">
+
+      </main>
+    </div>
+  </Transition>
+  </Teleport>
 </template>
 <script>
 import AOS from "aos";
 import "aos/dist/aos.css";
+import {ref} from 'vue'
 export default {
   setup() {
     AOS.init();
+    const show = ref(false)
+    const message = ref('')
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBd8mW76Etebho-ecVv8oQ-zHddcm_7IvI",
+  authDomain: "site-4d7b4.firebaseapp.com",
+  projectId: "site-4d7b4",
+  storageBucket: "site-4d7b4.appspot.com",
+  messagingSenderId: "320463935608",
+  appId: "1:320463935608:web:aabadc70f40c4190fab58d",
+  measurementId: "G-3BDJJHXKHP"
+};
+
+
+
+    const sendMessage = ()=>{
+        if(message.value.length> 0){
+          console.log(message.value)
+        }
+    }
+    return {show, message, sendMessage}
+  },
+  data(){
+    return{
+     active: false
+    }
+  },
+  watch:{
+     message(val){
+      console.log(val)
+      if(val.length>0){
+        this.active = true
+      }else{
+        this.active = false
+      }
+     }
   },
   methods:{
     animate(){
       let texts = document.querySelectorAll(".experience li")
       let i = 0;
      const animate =  setInterval(()=>{
-      console.log(i)
          if(i>= texts.length){
           clearInterval(animate)
           i=0
@@ -234,7 +299,7 @@ export default {
          i++
 
       }, 1000)
-    }
+    },
   },
   mounted(){
     this.animate()
@@ -242,5 +307,31 @@ export default {
 };
 </script>
 <style>
+.button{
+  animation:  animate 0.5s ease-in-out; 
+}
+@keyframes animate {
+  0%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+  
+  
+}
+.v-enter-active,
+.v-leave-active {
+  transition:  0.3s ease-in-out;
+}
 
+.v-enter-from,
+.v-leave-to {
+  transform: translateY(10px);
+  opacity: 0;
+}
+.active{
+  background: rgb(255, 93, 155);
+  color: #fff;
+}
 </style>
