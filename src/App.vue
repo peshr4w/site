@@ -37,17 +37,18 @@
           id="dot"
           class="opacity-0 mix-blend-darken ease-in-out transition absolute w-3 h-3 rounded-full bg-gradient-to-tr via-pink-400 from-violet-500 -left-5 top-0"
         ></div>
-        <li class="font-mono transition opacity-0">Full-stack developer</li>
-        <li class="font-mono transition opacity-0">UI designer</li>
-        <li class="font-mono transition opacity-0">
+        <li class="font-mono transition opacity-0 backdrop-blur-md bg-black/80 text-white rounded-full w-max px-2 mb-1">Full-stack developer</li>
+        <li class="font-mono transition opacity-0 backdrop-blur-md bg-black/80 text-white rounded-full w-max px-2 mb-1">UI designer</li>
+        <li class="font-mono transition opacity-0 backdrop-blur-md bg-black/80 text-white rounded-full w-max px-2 mb-1">
           Mobile application developer
         </li>
       </ul>
     </div>
   </div>
   <div class="p-3 mb-3 flex flex-col justify-center relative">
+    <div class="absolute left-0 w-full h-px bg-black origin-center  transition" :class="scale"></div>
     <button
-      class="border-slate-200 rounded-full px-3 py-2 border text-sm z-9 text-slate-700 mx-auto bg-white hover:bg-slate-100 transition capitalize"
+      class="button2  rounded-full px-3 py-2  text-sm z-9 text-slate-100 mx-auto bg-black/80 backdrop-blur-md transition capitalize"
     >
       What I'm good at
     </button>
@@ -62,7 +63,7 @@
       </h1>
       <div
         data-aos="fade-up"
-        class="frontend flex flex-wrap flex-rows space-x-4 transition items-center justify-items-center justify-center p-5 rounded-3xl md:rounded-full backdrop-blur-md bg-white/80 relative mb-5"
+        class="frontend flex flex-wrap flex-rows space-x-4 transition items-center justify-items-center justify-center p-5 rounded-3xl md:rounded-full backdrop-blur-md bg-black/80 relative mb-5"
       >
         <div
           class="cursor-pointer transition hover:-translate-y-2 w-10 justify-self-center"
@@ -104,7 +105,7 @@
           class="cursor-pointer transition hover:-translate-y-2 w-8 md:w-12 justify-self-center self py-px"
         >
           <img
-            src="https://cdn.iconscout.com/icon/free/png-512/free-jquery-10-1175155.png?f=avif&w=256"
+            src="https://cdn.iconscout.com/icon/free/png-512/free-jquery-3521520-2945023.png?f=avif&w=256"
             alt="jquery"
             class="w-full"
           />
@@ -158,7 +159,7 @@
           <img
             src="https://www.svgrepo.com/show/342062/next-js.svg"
             alt="nextjs"
-            class="w-full"
+            class="w-full bg-white rounded-full p-1"
           />
         </div>
       </div>
@@ -171,7 +172,7 @@
 
       <div
         data-aos="fade-up"
-        class="backend flex items-baseline flex-wrap p-2 px-3 space-x-3 rounded-full backdrop-blur-md bg-white/80 justify-center relative"
+        class="backend flex items-baseline flex-wrap p-2 px-3 space-x-3 rounded-full backdrop-blur-md bg-black/80 justify-center relative"
       >
         <div
           class="cursor-pointer transition hover:-translate-y-2 w-14 justify-self-center self py-px flex items-center justify-center"
@@ -223,16 +224,10 @@
           <img
             src="https://www.svgrepo.com/show/330398/express.svg"
             alt="express"
-            class="w-full"
+            class="w-full bg-white rounded-full p-1"
           />
         </div>
-        <div class="cursor-pointer 2 w-14 transition hover:-translate-y-3">
-          <img
-            src="https://www.svgrepo.com/show/373554/django.svg"
-            alt="django"
-            class="w-full"
-          />
-        </div>
+        
       </div>
       <h1
         data-aos="fade-up"
@@ -243,7 +238,7 @@
 
       <div
         data-aos="fade-up"
-        class="database flex flex-wrap p-2 space-x-3 px-3 shadow-lg rounded-full backdrop-blur-md bg-white/80 justify-center relative"
+        class="database flex flex-wrap p-2 space-x-3 px-3 shadow-lg rounded-full backdrop-blur-md bg-black/80 justify-center relative"
       >
         <div
           class="cursor-pointer transition hover:-translate-y-2 w-14 justify-self-center self py-px"
@@ -310,12 +305,12 @@
               />
             </button>
           </form>
-        
-        <div class="p-2  overflow-y-auto h-60 mb-3  bg-white rounded-xl">
-          <div v-for="comment in commentsStore.comments" :key="comment" class=" rounded-xl p-2  w-max mb-3  max-w-full break-words shadow-lg border border-slate-100">
+       
+          <div v-for="comment in commentsStore.comments" :key="comment" class="comment rounded-xl p-2 bg-white/50 backdrop-blur-md pl-5  w-full mb-4  break-words  relative" >
+            <div class="absolute w-1 h-3/4  rounded-md bg-slate-950 left-2 top-50 -translate-x-1/2"></div>
          <div class="font-inherit text-slate-600" style="font-family: inherit;">{{ comment.body }}</div>
-             <small class="text-slate-600">{{ format(comment.createdAt.seconds + comment.createdAt.miliseconds)}}</small>
-        </div>
+             <small class="text-slate-600">{{ format(comment.createdAt) }}</small>
+       
         </div>
       </div>
     </Transition>
@@ -349,6 +344,7 @@ export default {
   data() {
     return {
       active: false,
+      scale: 'scale-x-0'
     };
   },
   watch: {
@@ -372,6 +368,9 @@ export default {
           clearInterval(animate);
           i = 0;
           dot.style.transform = "scale(10)";
+          setTimeout(()=>{
+            this.scale = 'scale-x-1'
+          },500)
         }
         texts[i].classList.remove("opacity-0");
         texts[i].classList.add("opacity-1", "-translate-y-1");
@@ -411,7 +410,7 @@ export default {
   opacity: 0;
 }
 .active {
-  background: rgb(255, 93, 155);
+  background: rgb(17, 168, 255);
   color: #fff;
 }
 </style>
