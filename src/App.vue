@@ -310,10 +310,12 @@
             </button>
           </form>
         
-        <div class="p-2 space-y-3 overflow-y-auto h-full">
-          <div v-for="comment in comments" :key="comment" class="shadow rounded-lg p-2 bg-white">
-         <pre class="font-inherit" style="font-family: inherit;">{{ comment.body }}</pre> 
-         <small>{{ format(comment.createdAt) }}</small>
+        <div class="p-2 space-y-3 overflow-y-auto h-full ">
+          <div v-for="comment in commentsStore.comments" :key="comment" class=" rounded-xl p-2 bg-white w-max">
+         <pre class="font-inherit text-slate-900" style="font-family: inherit;">{{ comment.body }}</pre>
+         <div class="text-end text-sm">
+         <small class="text-slate-600 ">{{ format(comment.createdAt) }}</small>
+        </div> 
         </div>
         </div>
       </div>
@@ -323,61 +325,26 @@
 <script>
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { onMounted, ref } from "vue";
+import {ref} from "vue";
+import { useCommentsStore } from "@/stores/firebase";
+import { storeToRefs } from "pinia";
 import { format } from 'timeago.js';
-import { initializeApp } from "firebase/app";
-import {
-  addDoc,
-  collection,
-  getFirestore,
-  onSnapshot,
-  orderBy,
-  query,
-} from "firebase/firestore";
+
 export default {
   setup() {
     AOS.init();
     const show = ref(false);
     const message = ref("");
-    const comments = ref([]);
 
-    const firebaseConfig = {
-      apiKey: "AIzaSyBd8mW76Etebho-ecVv8oQ-zHddcm_7IvI",
-      authDomain: "site-4d7b4.firebaseapp.com",
-      projectId: "site-4d7b4",
-      storageBucket: "site-4d7b4.appspot.com",
-      messagingSenderId: "320463935608",
-      appId: "1:320463935608:web:aabadc70f40c4190fab58d",
-      measurementId: "G-3BDJJHXKHP",
-    };
-    initializeApp(firebaseConfig);
-    const db = getFirestore();
-    const colref = collection(db, "comments");
-    const q = query(colref, orderBy("createdAt"));
-
+    const commentsStore = useCommentsStore()
+    commentsStore.fetchComments()
     
-    
-    const fetchComments = ()=>{
-      let commentss = []
-    onSnapshot(q, (snapshot) => {
-      snapshot.docs.forEach((doc) => {
-        commentss.push({ ...doc.data(), id: doc.id })
-    });
-    });
-    comments.value = commentss;
-  }
-  fetchComments()
-  
-
     const sendMessage = () => {
       if (message.value.length > 0) {
-        addDoc(colref, {
-          body: message.value,
-          createdAt: new Date()
-        })
+        commentsStore.addComment(message.value)
       }
     };
-    return { show, message, sendMessage, comments, format };
+    return { show, message, sendMessage, commentsStore, format };
   },
   data() {
     return {
