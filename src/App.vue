@@ -56,14 +56,14 @@
             class="w-full "
           />
         </div>
-        <div class="cursor-pointer transition hover:-translate-y-2 w-8 md:w-12">
+        <div class="cursor-pointer transition hover:-translate-y-2 w-12">
           <img
             src="https://www.svgrepo.com/show/354478/typescript-icon.svg"
             alt="ts"
             class="w-full "
           />
         </div>
-        <div class="cursor-pointer transition hover:-translate-y-2 w-14 justify-self-center self py-px">
+        <div class="cursor-pointer transition hover:-translate-y-2 w-8 md:w-12 justify-self-center self py-px">
           <img
             src="https://cdn.iconscout.com/icon/free/png-512/free-jquery-10-1175155.png?f=avif&w=256"
             alt="jquery"
