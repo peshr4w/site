@@ -84,21 +84,21 @@
             class="w-full"
           />
         </div>
-        <div class="cursor-pointer transition hover:-translate-y-2 w-14 justify-self-center self py-px">
+        <div class="cursor-pointer transition hover:-translate-y-2 w-12 justify-self-center self py-px">
           <img
             src="https://www.svgrepo.com/show/452130/vue.svg"
             alt="vue"
             class="w-full"
           />
         </div>
-        <div class="cursor-pointer transition hover:-translate-y-2 w-14 justify-self-center self py-px">
+        <div class="cursor-pointer transition hover:-translate-y-2 w-12 justify-self-center self py-px">
           <img
             src="https://www.svgrepo.com/show/354131/nuxt-icon.svg"
             alt="nuxt"
             class="w-full"
           />
         </div>
-        <div class="cursor-pointer transition hover:-translate-y-2 w-14 justify-self-center self py-px">
+        <div class="cursor-pointer transition hover:-translate-y-2 w-12 justify-self-center self py-px">
           <img
             src="https://www.svgrepo.com/show/452092/react.svg"
             alt="react"
