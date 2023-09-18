@@ -38,14 +38,14 @@ export const useCommentsStore = defineStore("comments", {
             })
             this.comments = commentsList
         },
-        addComment(body) {
+        addComment(body, times) {
             console.log(body)
             initializeApp(this.firebaseConfig)
             const db = getFirestore();
             const colref = collection(db, "comments");
             addDoc(colref, {
                 body: body,
-                createdAt: new Date()
+                createdAt: times
             })
         }
     }

@@ -277,11 +277,12 @@
   <Teleport to="body">
     <Transition>
       <div
-        class="feedback w-full h-screen bg-slate-100 fixed top-14 p-4"
+        class="feedback w-full h-screen bg-slate-100 fixed top-0 p-4  overscroll-none"
+        v-if="show"
         
       >
         
-          <form @submit.prevent="sendMessage" class="relative mb-3">
+          <form @submit.prevent="sendMessage" class="relative mb-3 mt-14">
             <img
               src="https://www.svgrepo.com/show/509207/quote.svg"
               class="w-10 absolute -right-2 -top-4"
@@ -291,8 +292,8 @@
               name="comment"
               id=""
               rows="6"
-              class="resize-none outline-none w-full rounded-lg p-3"
-              spellcheck="off"
+              class="resize-none outline-none w-full rounded-xl p-3"
+              spellcheck="false"
               placeholder="Send an anonymous message.."
               v-model="message"
             ></textarea>
@@ -310,12 +311,10 @@
             </button>
           </form>
         
-        <div class="p-2 space-y-3 overflow-y-auto h-full ">
-          <div v-for="comment in commentsStore.comments" :key="comment" class=" rounded-xl p-2 bg-white w-max">
-         <pre class="font-inherit text-slate-900" style="font-family: inherit;">{{ comment.body }}</pre>
-         <div class="text-end text-sm">
-         <small class="text-slate-600 ">{{ format(comment.createdAt) }}</small>
-        </div> 
+        <div class="p-2  overflow-y-auto h-60 mb-3  bg-white rounded-xl">
+          <div v-for="comment in commentsStore.comments" :key="comment" class=" rounded-xl p-2  w-max mb-3  max-w-full break-words shadow-lg border border-slate-100">
+         <div class="font-inherit text-slate-600" style="font-family: inherit;">{{ comment.body }}</div>
+             <small class="text-slate-600">{{ format(comment.createdAt.seconds + comment.createdAt.miliseconds)}}</small>
         </div>
         </div>
       </div>
@@ -326,6 +325,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import {ref} from "vue";
+import { serverTimestamp } from "firebase/firestore";
 import { useCommentsStore } from "@/stores/firebase";
 import { storeToRefs } from "pinia";
 import { format } from 'timeago.js';
@@ -341,7 +341,7 @@ export default {
     
     const sendMessage = () => {
       if (message.value.length > 0) {
-        commentsStore.addComment(message.value)
+        commentsStore.addComment(message.value, serverTimestamp)
       }
     };
     return { show, message, sendMessage, commentsStore, format };
