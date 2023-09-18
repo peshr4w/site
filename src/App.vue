@@ -42,21 +42,21 @@
             class="w-full"
           />
         </div>
-        <div class="cursor-pointer transition hover:-translate-y-2 w-14 justify-self-center self py-px">
+        <div class="cursor-pointer transition hover:-translate-y-2 w-12 md:w-14 justify-self-center self py-px">
           <img
             src="https://www.svgrepo.com/show/452185/css-3.svg"
             alt="css"
             class="w-full"
           />
         </div>
-        <div class="cursor-pointer transition hover:-translate-y-2 w-14 justify-self-center self py-px">
+        <div class="cursor-pointer transition hover:-translate-y-2 w-12 md:w-14 justify-self-center self py-px">
           <img
             src="https://www.svgrepo.com/show/373705/js-official.svg"
             alt="js"
             class="w-full "
           />
         </div>
-        <div class="cursor-pointer transition hover:-translate-y-2 w-12">
+        <div class="cursor-pointer transition hover:-translate-y-2 w-10 md:w-12">
           <img
             src="https://www.svgrepo.com/show/354478/typescript-icon.svg"
             alt="ts"
