@@ -272,7 +272,7 @@
   <Teleport to="body">
     <Transition>
       <div
-        class="feedback w-full h-screen bg-slate-100 fixed top-0 p-4 overflow-y-auto"
+        class="feedback w-full h-screen bg-slate-100 fixed top-0 p-4 overflow-y-auto mb-6"
         v-if="show"
         
       >
