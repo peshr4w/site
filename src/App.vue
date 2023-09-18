@@ -33,7 +33,7 @@
       </h1>
       <div
         data-aos="fade-up"
-        class="frontend flex flex-wrap  flex-rows space-x-4 px-3 transition items-center justify-items-center  justify-center p-4 rounded-full backdrop-blur-md bg-white/80 relative mb-5"
+        class="frontend flex flex-wrap  flex-rows space-x-4  transition items-center justify-items-center  justify-center p-5 rounded-full backdrop-blur-md bg-white/80 relative mb-5"
       >
         <div class="cursor-pointer transition hover:-translate-y-2  w-8 md:w-12 justify-self-center">
           <img
