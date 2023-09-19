@@ -322,6 +322,7 @@ import "aos/dist/aos.css";
 import {ref} from "vue";
 import { useCommentsStore } from "@/stores/firebase";
 import { format } from 'timeago.js';
+import axios from 'axios'
 
 export default {
   setup() {
@@ -383,6 +384,7 @@ export default {
   },
   mounted() {
     this.animate();
+  
   },
 };
 </script>
