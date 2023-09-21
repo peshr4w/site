@@ -162,6 +162,13 @@
             class="w-full bg-white rounded-full p-1"
           />
         </div>
+         <div class="cursor-pointer transition hover:-translate-y-2 w-10">
+          <img
+            src="https://www.svgrepo.com/show/353751/flutter.svg"
+            alt="flutter"
+            class="w-full bg-white rounded-full p-1"
+          />
+        </div>
       </div>
       <h1
         data-aos="fade-up"
