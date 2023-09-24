@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex justify-between items-center px-4 sticky top-0 py-2 backdrop-blur-md  bg-white/40 z-20"
+    class="flex justify-between items-center px-4 sticky top-0 py-2 backdrop-blur-md bg-white/40 z-20"
   >
     <a
       href="/"
@@ -22,6 +22,7 @@
       ></div>
     </button>
   </header>
+
   <div
     class="container w-full flex flex-col items-center justify-center h-60 relative"
   >
@@ -35,23 +36,38 @@
       <ul class="capitalize font-mono experience relative">
         <div
           id="dot"
-          class="opacity-0 mix-blend-darken ease-in-out transition absolute w-3 h-3 rounded-full bg-gradient-to-tr via-pink-400 from-violet-500 -left-5 top-0"
+          class="opacity-0 mix-blend-darken ease-in-out transition absolute w-3 h-3 rounded-full bg-gradient-to-tr via-pink-400 from-violet-500 -left-5 top-1"
         ></div>
-        <li class="font-mono transition opacity-0 backdrop-blur-md bg-black/80 text-white rounded-full w-max px-2 mb-1">Full-stack developer</li>
-        <li class="font-mono transition opacity-0 backdrop-blur-md bg-black/80 text-white rounded-full w-max px-2 mb-1">UI designer</li>
-        <li class="font-mono transition opacity-0 backdrop-blur-md bg-black/80 text-white rounded-full w-max px-2 mb-1">
-          Mobile application developer
+        <li
+          class="font-mono transition opacity-0 backdrop-blur-md bg-black/80 text-white rounded-full w-max px-2 mb-1"
+        >
+          Fullstack developer
+        </li>
+        <li
+          class="font-mono transition opacity-0 backdrop-blur-md bg-black/80 text-white rounded-full w-max px-2 mb-1"
+        >
+          UI designer
+        </li>
+        <li
+          class="font-mono transition opacity-0 backdrop-blur-md bg-black/80 text-white rounded-full w-max px-2 mb-1"
+        >
+          Mobile app developer
         </li>
       </ul>
     </div>
   </div>
   <div class="p-3 mb-3 flex flex-col justify-center relative">
-    <div class="absolute left-0 w-full h-px bg-black origin-center  transition" :class="scale"></div>
-    <button
-      class="button2  rounded-full px-3 py-2  text-sm z-9 text-slate-100 mx-auto bg-black/80 backdrop-blur-md transition capitalize"
-    >
-      What I'm good at
-    </button>
+    <div
+      class="absolute left-0 w-full h-px bg-black origin-center transition"
+      :class="scale"
+    ></div>
+    <div class="mx-auto">
+      <button
+        class="button2 rounded-full px-3 py-2 text-sm z-9 text-slate-100 mx-auto bg-black/80 backdrop-blur-md transition capitalize"
+      >
+        What I'm good at
+      </button>
+    </div>
   </div>
   <div class="p-4">
     <div class="experience flex justify-center flex-col items-center space-y-3">
@@ -227,7 +243,6 @@
             class="w-full bg-white rounded-full p-1"
           />
         </div>
-        
       </div>
       <h1
         data-aos="fade-up"
@@ -268,15 +283,35 @@
       </div>
     </div>
   </div>
-  <div class="h-56"></div>
+  <svg
+    id="wave"
+    style="transform: rotate(0deg); transition: 0.3s"
+    viewBox="0 0 1440 160"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs>
+      <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+        <stop stop-color="rgba(124, 58, 237, 1)" offset="0%"></stop>
+        <stop stop-color="rgba(124, 58, 237, 1)" offset="100%"></stop>
+      </linearGradient>
+    </defs>
+    <path
+      style="transform: translate(0, 0px); opacity: 1"
+      fill="url(#sw-gradient-0)"
+      d="M0,80L80,88C160,96,320,112,480,104C640,96,800,64,960,50.7C1120,37,1280,43,1440,48C1600,53,1760,59,1920,66.7C2080,75,2240,85,2400,85.3C2560,85,2720,75,2880,69.3C3040,64,3200,64,3360,72C3520,80,3680,96,3840,101.3C4000,107,4160,101,4320,82.7C4480,64,4640,32,4800,24C4960,16,5120,32,5280,45.3C5440,59,5600,69,5760,66.7C5920,64,6080,48,6240,37.3C6400,27,6560,21,6720,29.3C6880,37,7040,59,7200,64C7360,69,7520,59,7680,69.3C7840,80,8000,112,8160,112C8320,112,8480,80,8640,80C8800,80,8960,112,9120,122.7C9280,133,9440,123,9600,109.3C9760,96,9920,80,10080,82.7C10240,85,10400,107,10560,114.7C10720,123,10880,117,11040,114.7C11200,112,11360,112,11440,112L11520,112L11520,160L11440,160C11360,160,11200,160,11040,160C10880,160,10720,160,10560,160C10400,160,10240,160,10080,160C9920,160,9760,160,9600,160C9440,160,9280,160,9120,160C8960,160,8800,160,8640,160C8480,160,8320,160,8160,160C8000,160,7840,160,7680,160C7520,160,7360,160,7200,160C7040,160,6880,160,6720,160C6560,160,6400,160,6240,160C6080,160,5920,160,5760,160C5600,160,5440,160,5280,160C5120,160,4960,160,4800,160C4640,160,4480,160,4320,160C4160,160,4000,160,3840,160C3680,160,3520,160,3360,160C3200,160,3040,160,2880,160C2720,160,2560,160,2400,160C2240,160,2080,160,1920,160C1760,160,1600,160,1440,160C1280,160,1120,160,960,160C800,160,640,160,480,160C320,160,160,160,80,160L0,160Z"
+    ></path>
+  </svg>
+  <div class="h-56 bg-violet-600 pt-5 relative box-content " style="height: 200vh">
+    <div  data-aos="fade-up" class="bg-white rounded-2xl transition m-5 h-20 w-20 max-h-56 max-w-screen min-w-min sticky top-20" id="box"></div>
+  </div>
   <Teleport to="body">
     <Transition>
       <div
         class="feedback w-full h-screen bg-slate-100 fixed top-0 p-4 overflow-y-auto mb-6"
         v-if="show"
-        
       >
-        
+        <div class="w-full md:w-1/2 mx-auto">
           <form @submit.prevent="sendMessage" class="relative mb-5 mt-14">
             <img
               src="https://www.svgrepo.com/show/509207/quote.svg"
@@ -295,7 +330,6 @@
             <button
               class="p-2 transition bg-slate-200 rounded-full flex ms-auto outline-none"
               :class="{ active: active }"
-              
             >
               Send
               <img
@@ -305,12 +339,25 @@
               />
             </button>
           </form>
-       
-          <div v-for="comment in commentsStore.comments" :key="comment" class="comment rounded-xl p-2 bg-white/50 backdrop-blur-md pl-5  w-full mb-4  break-words  relative" >
-            <div class="absolute w-1 h-3/4  rounded-md bg-slate-950 left-2 top-50 -translate-x-1/2"></div>
-         <div class="font-inherit text-slate-600" style="font-family: inherit;">{{ comment.body }}</div>
-             <small class="text-slate-600">{{ format(comment.createdAt) }}</small>
-       
+
+          <div
+            v-for="comment in commentsStore.comments"
+            :key="comment"
+            class="comment rounded-xl p-2 bg-white/50 backdrop-blur-md pl-5 w-full mb-4 break-words relative"
+          >
+            <div
+              class="absolute w-1 h-3/4 rounded-md bg-slate-950 left-2 top-50 -translate-x-1/2"
+            ></div>
+            <div
+              class="font-inherit text-slate-600"
+              style="font-family: inherit"
+            >
+              {{ comment.body }}
+            </div>
+            <small class="text-slate-600">{{
+              format(new Date(comment.createdAt.seconds * 1000))
+            }}</small>
+          </div>
         </div>
       </div>
     </Transition>
@@ -319,10 +366,9 @@
 <script>
 import AOS from "aos";
 import "aos/dist/aos.css";
-import {ref} from "vue";
+import { onMounted, ref } from "vue";
 import { useCommentsStore } from "@/stores/firebase";
-import { format } from 'timeago.js';
-
+import { format } from "timeago.js";
 
 export default {
   setup() {
@@ -330,22 +376,38 @@ export default {
     const show = ref(false);
     const message = ref("");
 
-    const commentsStore = useCommentsStore()
-    commentsStore.fetchComments()
-    
+    const commentsStore = useCommentsStore();
+    commentsStore.fetchComments();
+
     const sendMessage = () => {
       if (message.value.length > 0) {
-        commentsStore.addComment(message.value)
-        message.value = ''
+        commentsStore.addComment(message.value);
+        message.value = "";
       }
-
     };
+    const update = (e)=>{
+      
+      let box = document.getElementById('box')
+      let min = 1000;
+      let px = 0;
+      let persent = 0;
+      if(e.pageY >= min){
+        if((e.pageY - min) > 50 ){
+          if((e.pageY - min) < 300 ){
+            box.style.width = e.pageY - min+ "px"
+          }
+        box.style.height = e.pageY - min+ "px"
+        }
+      }
+    }
+    onMounted(()=>{window.addEventListener('wheel', update)})
     return { show, message, sendMessage, commentsStore, format };
   },
   data() {
     return {
       active: false,
-      scale: 'scale-x-0'
+      scale: "scale-x-0",
+      image: "",
     };
   },
   watch: {
@@ -368,9 +430,9 @@ export default {
           clearInterval(animate);
           i = 0;
           dot.style.transform = "scale(10)";
-          setTimeout(()=>{
-            this.scale = 'scale-x-1'
-          },500)
+          setTimeout(() => {
+            this.scale = "scale-x-1";
+          }, 500);
         }
         texts[i].classList.remove("opacity-0");
         texts[i].classList.add("opacity-1", "-translate-y-1");
@@ -384,7 +446,6 @@ export default {
   },
   mounted() {
     this.animate();
-  
   },
 };
 </script>
@@ -410,8 +471,7 @@ export default {
   transform: translateY(10px);
   opacity: 0;
 }
-.active{
+.active {
   color: blue;
 }
-
 </style>

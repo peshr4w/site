@@ -1,5 +1,6 @@
 import { defineStore } from "pinia";
 import { initializeApp } from "firebase/app";
+import { serverTimestamp } from "firebase/firestore";
 import {
     addDoc,
     collection,
@@ -45,7 +46,7 @@ export const useCommentsStore = defineStore("comments", {
             const colref = collection(db, "comments");
             addDoc(colref, {
                 body: text,
-                createdAt: new Date()
+                createdAt: serverTimestamp()
             })
         }
     }
