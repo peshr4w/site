@@ -392,22 +392,7 @@ export default {
         message.value = "";
       }
     };
-    const update = (e)=>{
-      
-      let box = document.getElementById('box')
-      let min = 1000;
-      let px = 0;
-      let persent = 0;
-      if(e.pageY >= min){
-        if((e.pageY - min) > 50 ){
-          if((e.pageY - min) < 300 ){
-            box.style.width = e.pageY - min+ "px"
-          }
-        box.style.height = e.pageY - min+ "px"
-        }
-      }
-    }
-    onMounted(()=>{window.addEventListener('wheel', update)})
+    
     return { show, message, sendMessage, commentsStore, format };
   },
   data() {
