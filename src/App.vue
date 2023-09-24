@@ -310,7 +310,7 @@
     ></path>
   </svg>
   <div class="h-56 bg-violet-600 pt-5 relative box-content " style="height: 200vh">
-    <div  data-aos="fade-up" class="bg-white rounded-2xl transition m-5 h-20 w-20 max-h-56 max-w-screen min-w-min sticky top-20" id="box"></div>
+    <div  data-aos="fade-up" class="bg-white rounded-2xl transition m-5 h-60 w-full sticky top-20" id="box"></div>
   </div>
   <Teleport to="body">
     <Transition>
