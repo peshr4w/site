@@ -352,7 +352,7 @@
           </a>
           <a class="w-6">
             <img
-              src=" https://www.svgrepo.com/show/475692/whatsapp-color.svg"
+              src="https://www.svgrepo.com/show/475692/whatsapp-color.svg"
               alt=""
               class="w-full"
             />
