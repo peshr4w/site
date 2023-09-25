@@ -335,7 +335,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
           quae. Ducimus officiis, molestiae repudiandae ad eos sint debitis
           adipisci saepe nulla possimus velit neque labore voluptas numquam quod
-          libero reprehenderit?
+          libero reprehenderit?s
           <span class="inline-flex"
             ><a href="#" class="text-blue-500"
               >See my CV <sup>&#8599;</sup></a
