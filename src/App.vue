@@ -479,7 +479,7 @@
         </div>
         <h1
           data-aos="fade-down"
-          class="text-center mb-6 text-2xl bg-gradient-to-l bg-white from-blue-500 to-violet-600 bg-clip-text text-transparent"
+          class="text-center mb-6 text-2xl text-slate-500"
         >
           My projects
         </h1>
