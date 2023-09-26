@@ -478,8 +478,8 @@
           </div>
         </div>
         <h1
-          data-aos="fade-down"
-          class="text-center mb-6 text-2xl text-slate-500"
+          data-aos="fade-up"
+          class="text-center mb-6 text-2xl text-slate-500 -z-10"
         >
           My projects
         </h1>
