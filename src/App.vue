@@ -311,9 +311,9 @@
   </svg>
   <div
     class="h-56 bg-violet-600 pt-5 relative overflow-hidden"
-    style="height: 200vh"
+    style="height: auto"
   >
-    <h1 data-aos="fade-up-right" class="text-white text-3xl ml-5">How I'm?</h1>
+    <h1 data-aos="fade-up-right" class="text-white text-3xl ml-5">How am I?</h1>
     <div
       data-aos="fade-up-left"
       class="bg-white rounded-3xl transition m-5 p-3 mb-14 flex flex-col md:flex-row relative"
@@ -387,7 +387,7 @@
           d="M0,0L34.3,10C68.6,20,137,40,206,43.3C274.3,47,343,33,411,33.3C480,33,549,47,617,58.3C685.7,70,754,80,823,76.7C891.4,73,960,57,1029,46.7C1097.1,37,1166,33,1234,33.3C1302.9,33,1371,37,1440,38.3C1508.6,40,1577,40,1646,48.3C1714.3,57,1783,73,1851,78.3C1920,83,1989,77,2057,73.3C2125.7,70,2194,70,2263,71.7C2331.4,73,2400,77,2469,73.3C2537.1,70,2606,60,2674,58.3C2742.9,57,2811,63,2880,56.7C2948.6,50,3017,30,3086,31.7C3154.3,33,3223,57,3291,70C3360,83,3429,87,3497,78.3C3565.7,70,3634,50,3703,38.3C3771.4,27,3840,23,3909,33.3C3977.1,43,4046,67,4114,63.3C4182.9,60,4251,30,4320,23.3C4388.6,17,4457,33,4526,46.7C4594.3,60,4663,70,4731,66.7C4800,63,4869,47,4903,38.3L4937.1,30L4937.1,100L4902.9,100C4868.6,100,4800,100,4731,100C4662.9,100,4594,100,4526,100C4457.1,100,4389,100,4320,100C4251.4,100,4183,100,4114,100C4045.7,100,3977,100,3909,100C3840,100,3771,100,3703,100C3634.3,100,3566,100,3497,100C3428.6,100,3360,100,3291,100C3222.9,100,3154,100,3086,100C3017.1,100,2949,100,2880,100C2811.4,100,2743,100,2674,100C2605.7,100,2537,100,2469,100C2400,100,2331,100,2263,100C2194.3,100,2126,100,2057,100C1988.6,100,1920,100,1851,100C1782.9,100,1714,100,1646,100C1577.1,100,1509,100,1440,100C1371.4,100,1303,100,1234,100C1165.7,100,1097,100,1029,100C960,100,891,100,823,100C754.3,100,686,100,617,100C548.6,100,480,100,411,100C342.9,100,274,100,206,100C137.1,100,69,100,34,100L0,100Z"
         ></path>
       </svg>
-      <div class="bg-slate-100 p-4 relative h-screen">
+      <div class="bg-slate-100 p-4 relative h-auto">
         <h1
           data-aos="fade-up-right"
           class="text-slate-500 text-3xl mb-5 relative"
@@ -399,36 +399,75 @@
           alt=""
           class="w-3/12 rotate-45 opacity-50 right-0 absolute -top-10"
         />
-        <div class="flex gap-x-2">
+        <div class="flex gap-x-2 mb-10">
           <div
             data-aos="fade-up-right"
             class="web rounded-2xl bg-white flex items-center flex-col basis-1/2 p-1 capitalize h-56 relative"
           >
             <h1 class="text-xl m-1 md:m-2 text-violet-600">web app</h1>
-            <div class="flex flex-wrap gap-1 md:gap-2 items-center justify-center my-auto">
-              <img src="https://www.svgrepo.com/show/353985/laravel.svg" alt="" class="w-8 md:w-10">
-              <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="" class="w-10">
-              <img src="https://www.svgrepo.com/show/452130/vue.svg" alt="" class="w-8 md:w-10">
-              <img src="https://www.svgrepo.com/show/354131/nuxt-icon.svg" alt="" class="w-8 md:w-10">
-              <img src="https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg" alt="" class="w-10">
-              <img src="https://www.svgrepo.com/show/342062/next-js.svg" alt="" class="w-8 md:w-10">
-                <img src="https://www.svgrepo.com/show/373845/mongo.svg" alt="mongodb" class="w-10"/>
-           <img
-            src="https://www.svgrepo.com/show/353735/firebase.svg" alt="firebase" class="w-9 md:w-10"/>
-            <img
-            src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="mysql" class="w-10"/>
-           <img
-            src="https://www.svgrepo.com/show/452075/node-js.svg" alt="node" class="w-10"/>
-            <img
-            src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png"
-            alt="bootstrap"
-            class="w-10"
-          />
+            <div
+              class="flex flex-wrap gap-1 md:gap-2 items-center justify-center my-auto"
+            >
+              <img
+                src="https://www.svgrepo.com/show/353985/laravel.svg"
+                alt=""
+                class="w-8 md:w-10"
+              />
+              <img
+                src="https://www.svgrepo.com/show/374118/tailwind.svg"
+                alt=""
+                class="w-10"
+              />
+              <img
+                src="https://www.svgrepo.com/show/452130/vue.svg"
+                alt=""
+                class="w-8 md:w-10"
+              />
+              <img
+                src="https://www.svgrepo.com/show/354131/nuxt-icon.svg"
+                alt=""
+                class="w-8 md:w-10"
+              />
+              <img
+                src="https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg"
+                alt=""
+                class="w-10"
+              />
+              <img
+                src="https://www.svgrepo.com/show/342062/next-js.svg"
+                alt=""
+                class="w-8 md:w-10"
+              />
+              <img
+                src="https://www.svgrepo.com/show/373845/mongo.svg"
+                alt="mongodb"
+                class="w-10"
+              />
+              <img
+                src="https://www.svgrepo.com/show/353735/firebase.svg"
+                alt="firebase"
+                class="w-9 md:w-10"
+              />
+              <img
+                src="https://www.mysql.com/common/logos/logo-mysql-170x115.png"
+                alt="mysql"
+                class="w-10"
+              />
+              <img
+                src="https://www.svgrepo.com/show/452075/node-js.svg"
+                alt="node"
+                class="w-10"
+              />
+              <img
+                src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png"
+                alt="bootstrap"
+                class="w-10"
+              />
             </div>
           </div>
           <div
             data-aos="fade-up-left"
-            class="mob rounded-2xl flex items-center  flex-col bg-white basis-1/2 p-2 capitalize h-56"
+            class="mob rounded-2xl flex items-center flex-col bg-white basis-1/2 p-2 capitalize h-56"
           >
             <h1 class="text-xl m-1 md:m2 text-blue-500">mobile app</h1>
             <img
@@ -438,8 +477,58 @@
             />
           </div>
         </div>
+        <h1
+          data-aos="fade-down"
+          class="text-center mb-6 text-2xl bg-gradient-to-l bg-white from-blue-500 to-violet-600 bg-clip-text text-transparent"
+        >
+          My projects
+        </h1>
+        <div class="flex justify-center gap-3  flex-wrap">
+          <a data-aos="fade-up" href="#" class="p-3 rounded-2xl bg-white w-60">
+            <h2>project</h2>
+            <div class="text-slate-500">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Architecto reprehenderit fugit quo atque, velit reiciendis!
+            </div>
+          </a>
+          <a data-aos="fade-up" href="#" class="p-3 rounded-2xl bg-white w-60">
+            <h2>project</h2>
+            <div class="text-slate-500">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Architecto reprehenderit fugit quo atque, velit reiciendis!
+            </div>
+          </a>
+          <a data-aos="fade-up" href="#" class="p-3 rounded-2xl bg-white w-60">
+            <h2>project</h2>
+            <div class="text-slate-500">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Architecto reprehenderit fugit quo atque, velit reiciendis!
+            </div>
+          </a>
+        </div>
       </div>
-      <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(241, 245, 249, 1)" offset="0%"></stop><stop stop-color="rgba(241, 245, 249, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,60L120,56.7C240,53,480,47,720,48.3C960,50,1200,60,1440,56.7C1680,53,1920,37,2160,35C2400,33,2640,47,2880,51.7C3120,57,3360,53,3600,50C3840,47,4080,43,4320,35C4560,27,4800,13,5040,8.3C5280,3,5520,7,5760,16.7C6000,27,6240,43,6480,55C6720,67,6960,73,7200,76.7C7440,80,7680,80,7920,80C8160,80,8400,80,8640,70C8880,60,9120,40,9360,28.3C9600,17,9840,13,10080,15C10320,17,10560,23,10800,36.7C11040,50,11280,70,11520,66.7C11760,63,12000,37,12240,35C12480,33,12720,57,12960,63.3C13200,70,13440,60,13680,61.7C13920,63,14160,77,14400,81.7C14640,87,14880,83,15120,75C15360,67,15600,53,15840,51.7C16080,50,16320,60,16560,58.3C16800,57,17040,43,17160,36.7L17280,30L17280,100L17160,100C17040,100,16800,100,16560,100C16320,100,16080,100,15840,100C15600,100,15360,100,15120,100C14880,100,14640,100,14400,100C14160,100,13920,100,13680,100C13440,100,13200,100,12960,100C12720,100,12480,100,12240,100C12000,100,11760,100,11520,100C11280,100,11040,100,10800,100C10560,100,10320,100,10080,100C9840,100,9600,100,9360,100C9120,100,8880,100,8640,100C8400,100,8160,100,7920,100C7680,100,7440,100,7200,100C6960,100,6720,100,6480,100C6240,100,6000,100,5760,100C5520,100,5280,100,5040,100C4800,100,4560,100,4320,100C4080,100,3840,100,3600,100C3360,100,3120,100,2880,100C2640,100,2400,100,2160,100C1920,100,1680,100,1440,100C1200,100,960,100,720,100C480,100,240,100,120,100L0,100Z"></path></svg>
+      <svg
+        id="wave"
+        style="transform: rotate(0deg); transition: 0.3s"
+        viewBox="0 0 1440 100"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+            <stop stop-color="rgba(241, 245, 249, 1)" offset="0%"></stop>
+            <stop stop-color="rgba(241, 245, 249, 1)" offset="100%"></stop>
+          </linearGradient>
+        </defs>
+        <path
+          style="transform: translate(0, 0px); opacity: 1"
+          fill="url(#sw-gradient-0)"
+          d="M0,60L120,56.7C240,53,480,47,720,48.3C960,50,1200,60,1440,56.7C1680,53,1920,37,2160,35C2400,33,2640,47,2880,51.7C3120,57,3360,53,3600,50C3840,47,4080,43,4320,35C4560,27,4800,13,5040,8.3C5280,3,5520,7,5760,16.7C6000,27,6240,43,6480,55C6720,67,6960,73,7200,76.7C7440,80,7680,80,7920,80C8160,80,8400,80,8640,70C8880,60,9120,40,9360,28.3C9600,17,9840,13,10080,15C10320,17,10560,23,10800,36.7C11040,50,11280,70,11520,66.7C11760,63,12000,37,12240,35C12480,33,12720,57,12960,63.3C13200,70,13440,60,13680,61.7C13920,63,14160,77,14400,81.7C14640,87,14880,83,15120,75C15360,67,15600,53,15840,51.7C16080,50,16320,60,16560,58.3C16800,57,17040,43,17160,36.7L17280,30L17280,100L17160,100C17040,100,16800,100,16560,100C16320,100,16080,100,15840,100C15600,100,15360,100,15120,100C14880,100,14640,100,14400,100C14160,100,13920,100,13680,100C13440,100,13200,100,12960,100C12720,100,12480,100,12240,100C12000,100,11760,100,11520,100C11280,100,11040,100,10800,100C10560,100,10320,100,10080,100C9840,100,9600,100,9360,100C9120,100,8880,100,8640,100C8400,100,8160,100,7920,100C7680,100,7440,100,7200,100C6960,100,6720,100,6480,100C6240,100,6000,100,5760,100C5520,100,5280,100,5040,100C4800,100,4560,100,4320,100C4080,100,3840,100,3600,100C3360,100,3120,100,2880,100C2640,100,2400,100,2160,100C1920,100,1680,100,1440,100C1200,100,960,100,720,100C480,100,240,100,120,100L0,100Z"
+        ></path>
+      </svg>
+    </div>
+    <div class="text-2xl text-center text-white py-4">
+      {{ new Date().getFullYear() }}
     </div>
   </div>
   <Teleport to="body">
