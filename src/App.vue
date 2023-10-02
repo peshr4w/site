@@ -588,6 +588,8 @@
       </div>
     </Transition>
   </Teleport>
+  <Analytics/>
+
 </template>
 <script>
 import AOS from "aos";
@@ -595,6 +597,7 @@ import "aos/dist/aos.css";
 import { onMounted, ref } from "vue";
 import { useCommentsStore } from "@/stores/firebase";
 import { format } from "timeago.js";
+import { Analytics } from '@vercel/analytics/react';
 
 export default {
   setup() {
@@ -654,6 +657,7 @@ export default {
         i++;
       }, 1000);
     },
+    
     scrollAnimate(){
       let projects = document.querySelectorAll('.projects a')
       
@@ -676,6 +680,9 @@ export default {
       }
     }
   },
+  components:{
+     Analytics
+    },
   mounted() {
     this.animate();
     this.scrollAnimate()
