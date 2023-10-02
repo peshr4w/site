@@ -26,7 +26,7 @@
   <div
     class="container w-full flex flex-col items-center justify-center h-60 relative"
   >
-    <div class="div">
+    <div>
       <h1
         class="text-4xl font-bold text-transparent bg-gradient-to-r to-purple-600 via-pink-400 from-violet-500 bg-clip-text mb-2"
         id="header"
@@ -483,22 +483,22 @@
         >
           My projects
         </h1>
-        <div class="flex justify-center gap-3  flex-wrap">
-          <a data-aos="fade-up" href="#" class="p-3 rounded-2xl bg-white w-60">
+        <div class="flex justify-center gap-3  flex-wrap projects">
+          <a  href="#" class="p-3 rounded-2xl bg-white w-60 scale-50 transition hover:rotate-12 hover:scale-105 hover:shadow-lg  ">
             <h2>project</h2>
             <div class="text-slate-500">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Architecto reprehenderit fugit quo atque, velit reiciendis!
             </div>
           </a>
-          <a data-aos="fade-up" href="#" class="p-3 rounded-2xl bg-white w-60">
+          <a  href="#" class="p-3 rounded-2xl bg-white w-60 scale-50 transition hover:rotate-12 hover:scale-105 hover:shadow-lg ">
             <h2>project</h2>
             <div class="text-slate-500">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Architecto reprehenderit fugit quo atque, velit reiciendis!
             </div>
           </a>
-          <a data-aos="fade-up" href="#" class="p-3 rounded-2xl bg-white w-60">
+          <a  href="#" class="p-3 rounded-2xl bg-white w-60 scale-50 transition hover:rotate-12 hover:scale-105 hover:shadow-lg ">
             <h2>project</h2>
             <div class="text-slate-500">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -654,9 +654,31 @@ export default {
         i++;
       }, 1000);
     },
+    scrollAnimate(){
+      let projects = document.querySelectorAll('.projects a')
+      
+      
+      
+      window.onscroll = (e)=>{
+      
+        
+        projects.forEach((project) => {
+          if(window.pageYOffset > (project.getBoundingClientRect().top + 700)){
+           
+            project.classList.remove('scale-50')
+            project.classList.remove('translate-y-20')
+        }else{
+          project.classList.add('scale-50')
+          project.classList.add('translate-y-20')
+        }
+        console.log(  project.style.background)
+      })
+      }
+    }
   },
   mounted() {
     this.animate();
+    this.scrollAnimate()
   },
 };
 </script>
