@@ -597,7 +597,7 @@ import "aos/dist/aos.css";
 import { onMounted, ref } from "vue";
 import { useCommentsStore } from "@/stores/firebase";
 import { format } from "timeago.js";
-import { Analytics } from '@vercel/analytics/react';
+import  Analytics from '@vercel/analytics/react';
 
 export default {
   setup() {
