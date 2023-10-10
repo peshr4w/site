@@ -250,6 +250,14 @@
             class="w-full bg-white rounded-full p-1"
           />
         </div>
+        <div class="cursor-pointer 2 w-14 transition hover:-translate-y-3">
+          <img
+            src="https://www.svgrepo.com/show/373644/graphql.svg"
+            alt="graphql"
+            class="w-full bg-white rounded-full p-1"
+          />
+        </div>
+        
       </div>
       <h1
         data-aos="fade-up"
