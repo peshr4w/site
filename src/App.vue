@@ -321,7 +321,7 @@
     class="h-56 bg-violet-600 pt-5 relative overflow-hidden"
     style="height: auto"
   >
-    <h1 data-aos="fade-up-right" class="text-white text-3xl ml-5">How am I?</h1>
+    <h1 data-aos="fade-up-right" class="text-white text-3xl ml-5">About me</h1>
     <div
       data-aos="fade-up-left"
       class="bg-white rounded-3xl transition m-5 p-3 mb-14 flex flex-col md:flex-row relative"
