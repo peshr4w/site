@@ -538,7 +538,7 @@
     <div class="text-2xl text-center text-white py-4">
       {{ new Date().getFullYear() }}
       <div class="text-violet-300 text-sm italic">
-        "Don't give up"
+        "Don't give up💪"
       </div>
     </div>
   </div>
