@@ -503,7 +503,7 @@
         
           <a
             href="#"
-            class="p-3 rounded-2xl bg-white w-60 scale-50 z-10 transition duration-300 hover:rotate-6 hover:scale-105 hover:shadow-lg relative"
+            class="p-3 rounded-2xl bg-white w-60 scale-50  transition duration-300 hover:rotate-6 hover:scale-105 hover:shadow-lg relative"
           >
        
             <h2 class="flex items-center gap-x-2">
