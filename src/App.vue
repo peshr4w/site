@@ -359,7 +359,7 @@
               class="w-full"
             />
           </a>
-          <a class="w-6 cursor-pointer" href="https://api.whatsapp.com/send?phone=07700764802">
+          <a class="w-6 cursor-pointer" href="https://api.whatsapp.com/send?phone=09647700764802">
             <img
               src="https://www.svgrepo.com/show/475692/whatsapp-color.svg"
               alt=""
