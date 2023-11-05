@@ -26,12 +26,13 @@
   <div
     class="container w-full flex flex-col items-center justify-center h-60 relative"
   >
+  <div class="absolute w-40 h-40 bg-gradient-to-br from-violet-700 to-pink-600 opacity-30 -left-20 -top-20 animate4 blur-2xl rounded-full"></div>
     <div>
       <h1
-        class="text-4xl font-bold text-transparent bg-gradient-to-r to-purple-600 via-pink-400 from-violet-500 bg-clip-text mb-2"
+        class="text-4xl font-bold text-transparent bg-gradient-to-r to-purple-600 via-pink-400 from-violet-500 bg-clip-text mb-2 myname"
         id="header"
       >
-        Hi. I'm Peshraw.
+        Hi, I'm Peshraw.
       </h1>
       <ul class="capitalize font-mono experience relative">
         <div
@@ -43,15 +44,16 @@
         >
           Fullstack developer
         </li>
-        <li
-          class="font-mono transition opacity-0 backdrop-blur-md bg-black/80 text-white rounded-full w-max px-2 mb-1"
-        >
-          UI designer
-        </li>
+       
         <li
           class="font-mono transition opacity-0 backdrop-blur-md bg-black/80 text-white rounded-full w-max px-2 mb-1"
         >
           Mobile app developer
+        </li>
+         <li
+          class="font-mono transition opacity-0 backdrop-blur-md bg-black/80 text-white rounded-full w-max px-2 mb-1"
+        >
+          UI designer
         </li>
       </ul>
     </div>
@@ -257,7 +259,6 @@
             class="w-full bg-white rounded-full p-1"
           />
         </div>
-        
       </div>
       <h1
         data-aos="fade-up"
@@ -324,7 +325,7 @@
     <h1 data-aos="fade-up-right" class="text-white text-3xl ml-5">About me</h1>
     <div
       data-aos="fade-up-left"
-      class="bg-white rounded-3xl transition m-5 p-3 mb-14 flex flex-col md:flex-row relative"
+      class="bg-white rounded-3xl transition m-5 p-3 mb-14 flex flex-col md:flex-row relative md:w-1/2"
       id="box"
     >
       <div
@@ -340,10 +341,10 @@
       <div data-aos="fade-up" class="container p-2 pl-3">
         <h1 class="capitalize text-2xl text-slate-800 mb-2">peshraw jwamer</h1>
         <p class="text-sm text-slate-600 mb-2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-          quae. Ducimus officiis, molestiae repudiandae ad eos sint debitis
-          adipisci saepe nulla possimus velit neque labore voluptas numquam quod
-          libero reprehenderit?
+          Web developer , UI UX designer , mobile app developer.
+          Im interested with developing apps that are fast secure and reliable, also with with modern ui and easy to interact with,
+          Working as freelancer, contact me for more Or
+          
           <span class="inline-flex"
             ><a href="#" class="text-blue-500"
               >See my CV <sup>&#8599;</sup></a
@@ -351,27 +352,34 @@
           >
         </p>
         <div class="flex items-center gap-x-2 justify-end">
-          <a class="w-8">
+          <a class="w-8 cursor-pointer" href="viber://chat?number=07700764802">
             <img
               src="https://www.svgrepo.com/show/349552/viber.svg"
               alt=""
               class="w-full"
             />
           </a>
-          <a class="w-6">
+          <a class="w-6 cursor-pointer" href="https://api.whatsapp.com/send?phone=07700764802">
             <img
               src="https://www.svgrepo.com/show/475692/whatsapp-color.svg"
               alt=""
               class="w-full"
             />
           </a>
-          <button class="w-6">
+          <button class="w-6 cursor-pointer" href="fb-messenger://user/100059111799752">
             <img
               src="https://www.svgrepo.com/show/303107/facebook-messenger-3-logo.svg"
               alt=""
               class="w-full"
             />
           </button>
+          <a class="w-8 cursor-pointer" href="mailto:peshrawj50@gmail.com">
+            <img
+              src="https://www.svgrepo.com/show/349378/gmail.svg"
+              alt=""
+              class="w-full"
+            />
+          </a>
         </div>
       </div>
     </div>
@@ -407,7 +415,7 @@
           alt=""
           class="w-3/12 rotate-45 opacity-50 right-0 absolute -top-10"
         />
-        <div class="flex gap-x-2 mb-10">
+        <div class="flex gap-x-2 mb-14 md:w-1/2 md:mx-auto md:gap-x-4">
           <div
             data-aos="fade-up-right"
             class="web rounded-2xl bg-white flex items-center flex-col basis-1/2 p-1 capitalize h-56 relative"
@@ -491,22 +499,38 @@
         >
           My projects
         </h1>
-        <div class="flex justify-center gap-3  flex-wrap projects">
-          <a  href="#" class="p-3 rounded-2xl bg-white w-60 scale-50 transition hover:rotate-6 hover:scale-105 hover:shadow-lg  ">
+        <div class="flex justify-center gap-3 flex-wrap projects mb-4 relative">
+        
+          <a
+            href="#"
+            class="p-3 rounded-2xl bg-white w-60 scale-50 z-10 transition duration-300 hover:rotate-6 hover:scale-105 hover:shadow-lg relative"
+          >
+       
+            <h2 class="flex items-center gap-x-2">
+              <img src="./assets/20231020_225203.png" alt="" class="w-10">
+             <div>SocialPic</div> 
+             <i class="bi bi-box-arrow-up-right ml-auto"></i>
+            </h2>
+            <div class="text-slate-500 pt-2">
+              Socialpic is a social web for sharing images <br>
+              used  Mongodb, Express js, Nodejs for backend and React for client side
+
+            </div>
+          </a>
+          <a
+            href="#"
+            class="p-3 rounded-2xl bg-white w-60 scale-50 transition duration-300 hover:rotate-6 hover:scale-105 hover:shadow-lg"
+          >
             <h2>project</h2>
             <div class="text-slate-500">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Architecto reprehenderit fugit quo atque, velit reiciendis!
             </div>
           </a>
-          <a  href="#" class="p-3 rounded-2xl bg-white w-60 scale-50 transition hover:rotate-6 hover:scale-105 hover:shadow-lg ">
-            <h2>project</h2>
-            <div class="text-slate-500">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Architecto reprehenderit fugit quo atque, velit reiciendis!
-            </div>
-          </a>
-          <a  href="#" class="p-3 rounded-2xl bg-white w-60 scale-50 transition hover:rotate-6 hover:scale-105 hover:shadow-lg ">
+          <a
+            href="#"
+            class="p-3 rounded-2xl bg-white w-60 scale-50 transition duration-300 hover:rotate-6 hover:scale-105 hover:shadow-lg"
+          >
             <h2>project</h2>
             <div class="text-slate-500">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -514,7 +538,8 @@
             </div>
           </a>
         </div>
-      </div>
+        <div class="text-xs text-slate-400 text-center">Some of this projects are demo means not used by real clients <i class="bi bi-info-circle"></i> </div>
+      </div> 
       <svg
         id="wave"
         style="transform: rotate(0deg); transition: 0.3s"
@@ -537,9 +562,7 @@
     </div>
     <div class="text-2xl text-center text-white py-4">
       {{ new Date().getFullYear() }}
-      <div class="text-violet-300 text-sm italic">
-        "Don't give up💪"
-      </div>
+      <div class="text-violet-300 text-sm italic">"Don't give up💪"</div>
     </div>
   </div>
   <Teleport to="body">
@@ -599,15 +622,13 @@
       </div>
     </Transition>
   </Teleport>
-
 </template>
 <script>
+import { useCommentsStore } from "@/stores/firebase";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { onMounted, ref } from "vue";
-import { useCommentsStore } from "@/stores/firebase";
 import { format } from "timeago.js";
-
+import { ref } from "vue";
 
 export default {
   setup() {
@@ -667,32 +688,26 @@ export default {
         i++;
       }, 1000);
     },
-    
-    scrollAnimate(){
-      let projects = document.querySelectorAll('.projects a')
-      
-      
-      
-      window.onscroll = (e)=>{
-      
-        
+
+    scrollAnimate() {
+      let projects = document.querySelectorAll(".projects a");
+
+      window.onscroll = (e) => {
         projects.forEach((project) => {
-          if(window.pageYOffset > (project.getBoundingClientRect().top + 700)){
-           
-            project.classList.remove('scale-50')
-            project.classList.remove('translate-y-20')
-        }else{
-          project.classList.add('scale-50')
-          project.classList.add('translate-y-20')
-        }
-        console.log(  project.style.background)
-      })
-      }
-    }
+          if (window.pageYOffset > project.getBoundingClientRect().top + 700) {
+            project.classList.remove("scale-50");
+            project.classList.remove("translate-y-20");
+          } else {
+            project.classList.add("scale-50");
+            project.classList.add("translate-y-20");
+          }
+        });
+      };
+    },
   },
   mounted() {
     this.animate();
-    this.scrollAnimate()
+    this.scrollAnimate();
   },
 };
 </script>
