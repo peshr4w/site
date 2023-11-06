@@ -330,7 +330,7 @@
     >
       <div
         data-aos="zoom-in-up"
-        class="image bg-slate-200 shadow w-36 h-36 rounded-full overflow-hidden shrink-0"
+        class="image bg-slate-200 shadow w-36 h-36 rounded-full overflow-hidden shrink-0 "
       >
         <img
           src="https://i.pinimg.com/564x/19/c0/df/19c0dfb48482cae6c971ef93dcf161f5.jpg"
@@ -366,9 +366,9 @@
               class="w-full"
             />
           </a>
-          <button class="w-6 cursor-pointer" href="fb-messenger://user/100059111799752">
+          <button class="w-7 cursor-pointer" href="t.me/+9647700764802">
             <img
-              src="https://www.svgrepo.com/show/303107/facebook-messenger-3-logo.svg"
+              src="https://www.svgrepo.com/show/452115/telegram.svg"
               alt=""
               class="w-full"
             />
