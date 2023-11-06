@@ -26,7 +26,9 @@
   <div
     class="container w-full flex flex-col items-center justify-center h-60 relative"
   >
-  <div class="absolute w-40 h-40 bg-gradient-to-br from-violet-700 to-pink-600 opacity-30 -left-20 -top-20 animate4 blur-2xl rounded-full"></div>
+    <div
+      class="absolute w-40 h-40 bg-gradient-to-br from-violet-700 to-pink-600 opacity-30 -left-20 -top-20 animate4 blur-2xl rounded-full"
+    ></div>
     <div>
       <h1
         class="text-4xl font-bold text-transparent bg-gradient-to-r to-purple-600 via-pink-400 from-violet-500 bg-clip-text mb-2 myname"
@@ -44,13 +46,13 @@
         >
           Fullstack developer
         </li>
-       
+
         <li
           class="font-mono transition opacity-0 backdrop-blur-md bg-black/80 text-white rounded-full w-max px-2 mb-1"
         >
           Mobile app developer
         </li>
-         <li
+        <li
           class="font-mono transition opacity-0 backdrop-blur-md bg-black/80 text-white rounded-full w-max px-2 mb-1"
         >
           UI designer
@@ -330,7 +332,7 @@
     >
       <div
         data-aos="zoom-in-up"
-        class="image bg-slate-200 shadow w-36 h-36 rounded-full overflow-hidden shrink-0 "
+        class="image bg-slate-200 shadow w-36 h-36 rounded-full overflow-hidden shrink-0"
       >
         <img
           src="https://i.pinimg.com/564x/19/c0/df/19c0dfb48482cae6c971ef93dcf161f5.jpg"
@@ -341,10 +343,11 @@
       <div data-aos="fade-up" class="container p-2 pl-3">
         <h1 class="capitalize text-2xl text-slate-800 mb-2">peshraw jwamer</h1>
         <p class="text-sm text-slate-600 mb-2">
-          Web developer , UI UX designer , mobile app developer.
-          Im interested with developing apps that are fast secure and reliable, also with with modern ui and easy to interact with,
-          Working as freelancer, contact me for more Or
-          
+          Web developer , UI UX designer , mobile app developer. Im interested
+          with developing apps that are fast secure and reliable, also with with
+          modern ui and easy to interact with, Working as freelancer, contact me
+          for more Or
+
           <span class="inline-flex"
             ><a href="#" class="text-blue-500"
               >See my CV <sup>&#8599;</sup></a
@@ -499,23 +502,28 @@
         >
           My projects
         </h1>
-        <div class="flex justify-center gap-3 flex-wrap projects mb-4 relative">
-        
+        <div class="flex justify-center gap-3 flex-wrap projects mb-4 relative bg-slate-200 p-5 rounded-2xl">
           <a
             href="#"
-            class="p-3 rounded-2xl bg-white w-60 scale-50  transition duration-300 hover:rotate-6 hover:scale-105 hover:shadow-lg relative"
+            class="p-3 rounded-2xl bg-white w-60 scale-50 transition duration-300 hover:rotate-6 hover:scale-105 hover:shadow-lg relative"
           >
-       
+         
             <h2 class="flex items-center gap-x-2">
-              <img src="./assets/20231020_225203.png" alt="" class="w-10">
-             <div>SocialPic</div> 
-             <i class="bi bi-box-arrow-up-right ml-auto"></i>
+              <img src="./assets/20231020_225203.png" alt="" class="w-10" />
+              <div>SocialPic</div>
+              <i class="bi bi-box-arrow-up-right ml-auto"></i>
             </h2>
-            <div class="text-slate-500 pt-2">
-              Socialpic is a social web for sharing images <br>
-              used  Mongodb, Express js, Nodejs for backend and React for client side
-
+            <div class="text-slate-500 pt-2 text-sm mb-2">
+              Socialpic is a social web for sharing images <br />
+              used Mongodb, Express js, Nodejs for backend and React for client
+              side
             </div>
+            <div class="flex gap-x-1">
+             <img src="https://www.svgrepo.com/show/452075/node-js.svg" alt="" class="w-8">
+             <img src="https://www.svgrepo.com/show/330398/express.svg" alt="" class="w-8 ml-2">
+             <img src="https://www.svgrepo.com/show/373845/mongo.svg" alt="" class="w-9">
+             <img src="https://www.svgrepo.com/show/452092/react.svg" alt="" class="w-8">
+          </div>
           </a>
           <a
             href="#"
@@ -538,8 +546,11 @@
             </div>
           </a>
         </div>
-        <div class="text-xs text-slate-400 text-center">Some of this projects are demo means not used by real clients <i class="bi bi-info-circle"></i> </div>
-      </div> 
+        <div class="text-xs text-slate-400 text-center">
+          Some of this projects are demo means not used by real clients
+          <i class="bi bi-info-circle"></i>
+        </div>
+      </div>
       <svg
         id="wave"
         style="transform: rotate(0deg); transition: 0.3s"

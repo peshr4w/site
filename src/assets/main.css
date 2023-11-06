@@ -8,6 +8,10 @@ body {
     background: rgb(248, 248, 248);
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .database:before {
     content: "";
     z-index: -1;
