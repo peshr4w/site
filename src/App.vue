@@ -530,7 +530,7 @@
             href="#"
             class="p-3 rounded-2xl bg-white w-60 scale-50 transition duration-300 hover:rotate-6 hover:scale-105 hover:shadow-lg"
           >
-            <h2>project</h2>
+            <h2 id="projects">project</h2>
             <div class="text-slate-500">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Architecto reprehenderit fugit quo atque, velit reiciendis!
